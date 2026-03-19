@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Deepsea_light_lib")(type "KiCad")(uri "${KIPRJMOD}/Deepsea_light_lib/Deepsea_light_dir/Deepsea_light_lib.kicad_sym")(options "")(descr ""))
+  (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "${KIPRJMOD}/RP-Pico Libraries/MCU_RaspberryPi_and_Boards.kicad_sym")(options "")(descr ""))
+)
