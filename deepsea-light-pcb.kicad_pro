@@ -658,7 +658,7 @@
       {
         "filename": "deepsea-light-pcb.kicad_sch",
         "name": "deepsea-light-pcb",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "99abfaa1-ae0d-4c93-9def-8bea19834d01"
       }
     ],
     "used_designators": "",
@@ -667,7 +667,7 @@
   "sheets": [
     [
       "99abfaa1-ae0d-4c93-9def-8bea19834d01",
-      "Root"
+      "deepsea-light-pcb"
     ]
   ],
   "text_variables": {},
