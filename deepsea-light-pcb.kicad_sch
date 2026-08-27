@@ -1528,6 +1528,16 @@
 		)
 		(uuid "0366e66b-7611-4971-b5bc-a6e0c739db89")
 	)
+	(text "Wires from Lights are 18 AWG"
+		(exclude_from_sim no)
+		(at 205.486 43.942 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cc44cd01-1d54-47e8-8138-53ede2cea3a2")
+	)
 	(text "LED Connectors"
 		(exclude_from_sim no)
 		(at 205.994 38.862 0)
