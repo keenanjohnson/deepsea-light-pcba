@@ -1528,9 +1528,19 @@
 		)
 		(uuid "0366e66b-7611-4971-b5bc-a6e0c739db89")
 	)
+	(text "Power is ~ 100 watts at 24 volts, so need to support just over 4 amps"
+		(exclude_from_sim no)
+		(at 203.708 46.736 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "61804409-0f9c-4162-a3f4-660667fc40b5")
+	)
 	(text "Wires from Lights are 18 AWG"
 		(exclude_from_sim no)
-		(at 205.486 43.942 0)
+		(at 205.232 42.672 0)
 		(effects
 			(font
 				(size 1.27 1.27)
