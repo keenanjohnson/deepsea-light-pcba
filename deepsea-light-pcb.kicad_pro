@@ -529,7 +529,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "deepsea-light-pcb.stl",
+      "step": "deepsea-light-pcb.step",
       "svg": "",
       "vrml": ""
     },
