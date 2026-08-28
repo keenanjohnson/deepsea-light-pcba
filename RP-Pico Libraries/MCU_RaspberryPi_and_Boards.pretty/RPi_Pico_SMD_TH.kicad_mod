@@ -1904,7 +1904,7 @@
 		(uuid "aadc3df5-0e2d-4f3d-b72e-6f184da74c89")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/RP-Pico Libraries/Pico.wrl"
+	(model "${KICAD10_3DMODEL_DIR}/Module.3dshapes/RaspberryPi_Pico.step"
 		(offset
 			(xyz 0 0 0)
 		)
