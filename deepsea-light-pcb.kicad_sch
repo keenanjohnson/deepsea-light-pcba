@@ -2881,6 +2881,16 @@
 		)
 		(uuid "0ed60d45-f481-4f1d-a142-9bf37a648da4")
 	)
+	(label "RxD_B+"
+		(at 88.9 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "243e7365-e412-4f07-8d4e-8b04c356de98")
+	)
 	(label "LIGHTS_TX"
 		(at 44.45 110.49 0)
 		(effects
@@ -2960,6 +2970,16 @@
 			(justify left bottom)
 		)
 		(uuid "694cfdcf-e3d7-47c0-965f-7248e8886603")
+	)
+	(label "TxD_A-"
+		(at 88.9 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6d9d69d9-a3bd-4081-8ba4-96f115d901cd")
 	)
 	(label "PULSE_SYNC"
 		(at 154.94 80.01 0)
