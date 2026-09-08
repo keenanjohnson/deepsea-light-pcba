@@ -217,6 +217,19 @@
 				)
 			)
 		)
+		(property "Callout" "Light 1 Connector"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "696c2b31-1091-420e-9e7c-c6057a3929b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/20837866-2653-46fb-9b38-1c1e36c4b88e")
 		(sheetname "/")
 		(sheetfile "deepsea-light-pcb.kicad_sch")
@@ -1052,6 +1065,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Callout" "Raspberry Pi Pico 2"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "767e0e97-9865-426e-83ce-c47b8ec27db7")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3232,6 +3258,19 @@
 				)
 			)
 		)
+		(property "Callout" "RS-485 Transceiver"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92194d1e-4a0b-49b5-8f6b-5d724292a5bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/b60dd616-d6af-46a8-8952-52b150ab060b")
 		(sheetname "/")
 		(sheetfile "deepsea-light-pcb.kicad_sch")
@@ -3835,6 +3874,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "227fe467-09bc-4ff1-a709-ba4bc070c6f3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Callout" "Light 2 Connector"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "51f70e63-3959-4812-a260-1123a2761c58")
 			(effects
 				(font
 					(size 1 1)
@@ -4694,6 +4746,19 @@
 				)
 			)
 		)
+		(property "Callout" "Light 4 Connector"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72b6bd77-3833-4f9a-9238-c206a0845ecb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/4a67dc4d-d131-4196-b6c5-f240ba7acd0d")
 		(sheetname "/")
 		(sheetfile "deepsea-light-pcb.kicad_sch")
@@ -5544,6 +5609,19 @@
 				)
 			)
 		)
+		(property "Callout" "PWM Input"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79ebba88-3e81-49ad-91a0-4834790b17d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/d19839cb-0386-47f0-a348-2589a4b6e609")
 		(sheetname "/")
 		(sheetfile "deepsea-light-pcb.kicad_sch")
@@ -5977,6 +6055,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7a1a0adc-fe01-4050-b716-adbd6c74003a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Callout" "Light 3 Connector"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f14b2e58-20f1-432e-a919-72ab44898517")
 			(effects
 				(font
 					(size 1 1)

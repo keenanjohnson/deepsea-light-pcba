@@ -3454,6 +3454,17 @@
 				)
 			)
 		)
+		(property "Callout" "Light 1 Connector"
+			(at 170.18 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "a7f87550-7f07-461a-a059-6a5ac60a5cc5")
 		)
@@ -3707,6 +3718,17 @@
 			)
 		)
 		(property "LCSC" "C3818565"
+			(at 170.18 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Callout" "Light 4 Connector"
 			(at 170.18 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -4058,6 +4080,17 @@
 				)
 			)
 		)
+		(property "Callout" "Light 2 Connector"
+			(at 170.18 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "4b7e7253-0d0a-43d7-9fbd-e6961bc18209")
 		)
@@ -4232,6 +4265,17 @@
 			)
 		)
 		(property "LCSC" "C98732"
+			(at 229.87 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Callout" "Input 24 V"
 			(at 229.87 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -4643,6 +4687,17 @@
 				)
 			)
 		)
+		(property "Callout" "RS-485 Transceiver"
+			(at 74.93 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "94d57b50-4f9b-4129-9d95-cef89281d002")
 		)
@@ -4809,6 +4864,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 76.2 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Callout" "Raspberry Pi Pico 2"
 			(at 76.2 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -5114,6 +5180,17 @@
 				)
 			)
 		)
+		(property "Callout" "PWM Input"
+			(at 229.87 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1b2cab5c-1f32-4133-9928-310af7f1625e")
 		)
@@ -5281,6 +5358,17 @@
 			)
 		)
 		(property "LCSC" "C3818565"
+			(at 170.18 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Callout" "Light 3 Connector"
 			(at 170.18 104.14 0)
 			(hide yes)
 			(show_name no)
