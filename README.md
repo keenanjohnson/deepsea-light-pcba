@@ -1,6 +1,12 @@
 # deepsea-light-pcba
 A PCB for controlling Deepsea Lights
 
+## Connectors
+
+![Connector overview](docs/connectors.png)
+
+Rendered automatically by [kicad-callouts](https://github.com/keenanjohnson/kicad-callouts) via GitHub Actions whenever the board changes.
+
 
 ## Random Notes
 
