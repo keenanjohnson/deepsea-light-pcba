@@ -1,5 +1,7 @@
-# Re-renders docs/connectors.png with kicad-callouts whenever the board changes
-# and commits the result, so the image in README.md stays current.
+# Re-renders docs/connectors.png with kicad-callouts whenever the board changes.
+# On main it commits the result so the image in README.md stays current.
+# On pull requests it commits the render to the PR branch and posts a sticky
+# comment with a preview.
 name: Connector render
 
 on:
@@ -10,24 +12,36 @@ on:
       - Deepsea_light_lib/**
       - RP-Pico Libraries/**
       - .github/workflows/connectors.yml
+  pull_request:
+    paths:
+      - deepsea-light-pcb.kicad_pcb
+      - Deepsea_light_lib/**
+      - RP-Pico Libraries/**
+      - .github/workflows/connectors.yml
   workflow_dispatch:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
-  group: connector-render
+  group: connector-render-${{ github.head_ref || github.ref }}
   cancel-in-progress: true
 
 jobs:
   render:
     runs-on: ubuntu-latest
+    # Pushing back to a PR branch only works for branches in this repo, not forks.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     container:
       # The -full variant includes KiCad's stock 3D models (needed for the Pico).
       image: kicad/kicad:10.0-full
       options: --user root
     steps:
       - uses: actions/checkout@v4
+        with:
+          # On PRs check out the branch itself (not the detached merge commit) so we can push to it.
+          ref: ${{ github.head_ref || github.ref }}
 
       - name: Install kicad-callouts and rsvg-convert
         run: |
@@ -42,13 +56,35 @@ jobs:
           kicad-callouts deepsea-light-pcb.kicad_pcb -o docs/connectors.png
 
       - name: Commit if changed
+        id: commit
         run: |
           git add docs/connectors.png
           if git diff --cached --quiet; then
             echo "No change to docs/connectors.png"
-            exit 0
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Update connector render"
+            git push
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update connector render"
-          git push
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Post preview comment on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        env:
+          SHA: ${{ steps.commit.outputs.sha }}
+        with:
+          script: |
+            const marker = '<!-- connector-render -->';
+            const url = `https://raw.githubusercontent.com/${context.repo.owner}/${context.repo.repo}/${process.env.SHA}/docs/connectors.png`;
+            const body = `${marker}\n### Connector render\n\n![Connector overview](${url})\n\n_Rendered from ${process.env.SHA.slice(0, 7)}_`;
+            const { data: comments } = await github.rest.issues.listComments({
+              ...context.repo, issue_number: context.issue.number, per_page: 100,
+            });
+            const existing = comments.find(c => c.body && c.body.startsWith(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({ ...context.repo, comment_id: existing.id, body });
+            } else {
+              await github.rest.issues.createComment({ ...context.repo, issue_number: context.issue.number, body });
+            }
