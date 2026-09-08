@@ -32,7 +32,11 @@ jobs:
   render:
     runs-on: ubuntu-latest
     # Pushing back to a PR branch only works for branches in this repo, not forks.
-    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    # Skip runs triggered by our own render commit, otherwise a PR re-renders forever
+    # (the git hash stamped into the image changes with every commit).
+    if: >-
+      github.actor != 'github-actions[bot]' &&
+      (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
     container:
       # The -full variant includes KiCad's stock 3D models (needed for the Pico).
       image: kicad/kicad:10.0-full
@@ -64,7 +68,7 @@ jobs:
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "Update connector render"
+            git commit -m "Update connector render [skip ci]"
             git push
           fi
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
