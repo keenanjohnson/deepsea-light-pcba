@@ -2079,6 +2079,16 @@
 		)
 		(uuid "1ca00c1a-caf0-4779-b07a-a1ce68f12576")
 	)
+	(text "Pulse Sync Pin"
+		(exclude_from_sim no)
+		(at 144.78 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4861439d-562a-405a-9141-3336b5dbb0e2")
+	)
 	(text "Power is ~ 100 watts at 24 volts, so need to support just over 4 amps"
 		(exclude_from_sim no)
 		(at 169.418 41.656 0)
@@ -2089,6 +2099,26 @@
 		)
 		(uuid "61804409-0f9c-4162-a3f4-660667fc40b5")
 	)
+	(text "Pulse Sync Pin"
+		(exclude_from_sim no)
+		(at 144.526 80.264 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8f236a91-365a-46e8-aecd-02b5e6649eaf")
+	)
+	(text "Pulse Sync Pin"
+		(exclude_from_sim no)
+		(at 143.51 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b8b3e39e-4c9b-4a91-b64b-08957aff2a97")
+	)
 	(text "Wires from Lights are 18 AWG"
 		(exclude_from_sim no)
 		(at 170.942 37.592 0)
@@ -2098,6 +2128,16 @@
 			)
 		)
 		(uuid "cc44cd01-1d54-47e8-8138-53ede2cea3a2")
+	)
+	(text "Pulse Sync Pin"
+		(exclude_from_sim no)
+		(at 144.526 132.334 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dae469e3-198c-42f8-adfe-2c920fd95b0e")
 	)
 	(text "LED Connectors"
 		(exclude_from_sim no)
@@ -2168,12 +2208,20 @@
 		(uuid "6ebc168b-18c0-4243-b1b1-b7a30a2892c3")
 	)
 	(no_connect
+		(at 153.67 132.08)
+		(uuid "849da80a-8dce-475e-aaf8-1f98504c98ad")
+	)
+	(no_connect
 		(at 58.42 123.19)
 		(uuid "88c77f8f-9e1b-43e9-8850-e3b27cead44b")
 	)
 	(no_connect
 		(at 93.98 125.73)
 		(uuid "8cfd576b-dee4-4c97-84ca-0266ccf85b42")
+	)
+	(no_connect
+		(at 153.67 105.41)
+		(uuid "8df77e9b-f8a6-44e4-9787-67f89be4b180")
 	)
 	(no_connect
 		(at 93.98 138.43)
@@ -2200,6 +2248,10 @@
 		(uuid "cc227d5e-fb79-4827-ab2d-25129ae0a780")
 	)
 	(no_connect
+		(at 153.67 55.88)
+		(uuid "d571f0b1-2a9a-4d60-aeb2-55ae11a987c1")
+	)
+	(no_connect
 		(at 93.98 143.51)
 		(uuid "d76d8e27-2b10-453c-8faa-df3b693a4973")
 	)
@@ -2210,6 +2262,10 @@
 	(no_connect
 		(at 166.37 102.87)
 		(uuid "e4e2f067-77fc-45ac-bfcf-d9a6182f7431")
+	)
+	(no_connect
+		(at 153.67 80.01)
+		(uuid "f7ff3ce7-67d6-4fca-962d-caed26224d30")
 	)
 	(wire
 		(pts
@@ -2941,16 +2997,6 @@
 		)
 		(uuid "4cae0e4a-af47-4ba9-9a61-c8aea105fad5")
 	)
-	(label "PULSE_SYNC"
-		(at 154.94 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "50707c47-bd05-49c6-861c-d27c0cc5d28d")
-	)
 	(label "RxD_B+"
 		(at 154.94 58.42 0)
 		(effects
@@ -2961,16 +3007,6 @@
 		)
 		(uuid "64bd3d94-a286-461e-9fa8-4083b6102839")
 	)
-	(label "PULSE_SYNC"
-		(at 154.94 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "694cfdcf-e3d7-47c0-965f-7248e8886603")
-	)
 	(label "TxD_A-"
 		(at 88.9 53.34 0)
 		(effects
@@ -2980,16 +3016,6 @@
 			(justify left bottom)
 		)
 		(uuid "6d9d69d9-a3bd-4081-8ba4-96f115d901cd")
-	)
-	(label "PULSE_SYNC"
-		(at 154.94 80.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7d10d438-f6b4-42d5-a152-1f9cb426fb79")
 	)
 	(label "TxD_A-"
 		(at 154.94 110.49 0)
@@ -3030,16 +3056,6 @@
 			(justify left bottom)
 		)
 		(uuid "b711d6a0-d077-4d98-b57d-4ceff28a02c8")
-	)
-	(label "PULSE_SYNC"
-		(at 154.94 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b7f57e71-4d52-42d4-8b01-908148bc0130")
 	)
 	(label "TxD_A-"
 		(at 154.94 85.09 0)
