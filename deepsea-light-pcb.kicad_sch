@@ -168,7 +168,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Deepsea_light_lib:2604-1106"
+		(symbol "Deepsea_light_lib:2604-1104"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -184,7 +184,7 @@
 					)
 				)
 			)
-			(property "Value" "2604-1106"
+			(property "Value" "2604-1104"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -194,7 +194,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Deepsea_light_lib:CONN-TH_2604-1106"
+			(property "Footprint" "Deepsea_light_lib:CONN-TH_2604-1104"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -206,7 +206,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240408/20B39D55263B4F2D0D812E06044A9CB1.pdf"
+			(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240403/5F4C121C25BCB0080802869D2966FD73.pdf"
 				(at -2.286 0.127 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -229,7 +229,7 @@
 					)
 				)
 			)
-			(property "LCSC" "C3818565"
+			(property "LCSC" "C3309598"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -240,7 +240,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "C3818565"
+			(property "ki_keywords" "C3309598"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -251,10 +251,10 @@
 					)
 				)
 			)
-			(symbol "2604-1106_0_1"
+			(symbol "2604-1104_0_1"
 				(rectangle
-					(start -1.27 8.89)
-					(end 3.81 -8.89)
+					(start -2.54 6.35)
+					(end 2.54 -6.35)
 					(stroke
 						(width 0)
 						(type default)
@@ -264,7 +264,7 @@
 					)
 				)
 				(circle
-					(center 0 7.62)
+					(center -1.27 5.08)
 					(radius 0.381)
 					(stroke
 						(width 0)
@@ -275,7 +275,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -3.81 6.35 0)
+					(at -5.08 3.81 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -293,7 +293,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -3.81 3.81 0)
+					(at -5.08 1.27 0)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -311,7 +311,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -3.81 1.27 0)
+					(at -5.08 -1.27 0)
 					(length 2.54)
 					(name "3"
 						(effects
@@ -329,7 +329,7 @@
 					)
 				)
 				(pin unspecified line
-					(at -3.81 -1.27 0)
+					(at -5.08 -3.81 0)
 					(length 2.54)
 					(name "4"
 						(effects
@@ -339,42 +339,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -3.81 -3.81 0)
-					(length 2.54)
-					(name "5"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -3.81 -6.35 0)
-					(length 2.54)
-					(name "6"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1 1)
@@ -1804,6 +1768,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3V3"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power global)
 			(pin_numbers
@@ -2079,16 +2182,6 @@
 		)
 		(uuid "1ca00c1a-caf0-4779-b07a-a1ce68f12576")
 	)
-	(text "Pulse Sync Pin"
-		(exclude_from_sim no)
-		(at 144.78 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "4861439d-562a-405a-9141-3336b5dbb0e2")
-	)
 	(text "Power is ~ 100 watts at 24 volts, so need to support just over 4 amps"
 		(exclude_from_sim no)
 		(at 169.418 41.656 0)
@@ -2099,26 +2192,6 @@
 		)
 		(uuid "61804409-0f9c-4162-a3f4-660667fc40b5")
 	)
-	(text "Pulse Sync Pin"
-		(exclude_from_sim no)
-		(at 144.526 80.264 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8f236a91-365a-46e8-aecd-02b5e6649eaf")
-	)
-	(text "Pulse Sync Pin"
-		(exclude_from_sim no)
-		(at 143.51 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b8b3e39e-4c9b-4a91-b64b-08957aff2a97")
-	)
 	(text "Wires from Lights are 18 AWG"
 		(exclude_from_sim no)
 		(at 170.942 37.592 0)
@@ -2128,16 +2201,6 @@
 			)
 		)
 		(uuid "cc44cd01-1d54-47e8-8138-53ede2cea3a2")
-	)
-	(text "Pulse Sync Pin"
-		(exclude_from_sim no)
-		(at 144.526 132.334 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "dae469e3-198c-42f8-adfe-2c920fd95b0e")
 	)
 	(text "LED Connectors"
 		(exclude_from_sim no)
@@ -2168,10 +2231,6 @@
 		(uuid "09a6168c-196c-45a4-8ec9-3df950823696")
 	)
 	(no_connect
-		(at 166.37 77.47)
-		(uuid "0adf910e-d0d8-4104-a060-a4f737782d9f")
-	)
-	(no_connect
 		(at 58.42 120.65)
 		(uuid "0d65a759-2ad8-47da-8cd6-775adeaaabb5")
 	)
@@ -2182,10 +2241,6 @@
 	(no_connect
 		(at 93.98 151.13)
 		(uuid "2da6e6e8-9f5f-47eb-966a-483b212a9ec5")
-	)
-	(no_connect
-		(at 166.37 129.54)
-		(uuid "313db0c7-a852-40aa-98e8-48385d8d1594")
 	)
 	(no_connect
 		(at 58.42 125.73)
@@ -2208,20 +2263,12 @@
 		(uuid "6ebc168b-18c0-4243-b1b1-b7a30a2892c3")
 	)
 	(no_connect
-		(at 153.67 132.08)
-		(uuid "849da80a-8dce-475e-aaf8-1f98504c98ad")
-	)
-	(no_connect
 		(at 58.42 123.19)
 		(uuid "88c77f8f-9e1b-43e9-8850-e3b27cead44b")
 	)
 	(no_connect
 		(at 93.98 125.73)
 		(uuid "8cfd576b-dee4-4c97-84ca-0266ccf85b42")
-	)
-	(no_connect
-		(at 153.67 105.41)
-		(uuid "8df77e9b-f8a6-44e4-9787-67f89be4b180")
 	)
 	(no_connect
 		(at 93.98 138.43)
@@ -2236,10 +2283,6 @@
 		(uuid "b615cebf-a67e-4354-9002-fd27ee41c8fb")
 	)
 	(no_connect
-		(at 166.37 53.34)
-		(uuid "b90cf4af-3533-4abf-9787-f6493ef44729")
-	)
-	(no_connect
 		(at 58.42 130.81)
 		(uuid "c90bf572-fad6-4a5a-8459-da5590c64a5e")
 	)
@@ -2248,24 +2291,12 @@
 		(uuid "cc227d5e-fb79-4827-ab2d-25129ae0a780")
 	)
 	(no_connect
-		(at 153.67 55.88)
-		(uuid "d571f0b1-2a9a-4d60-aeb2-55ae11a987c1")
-	)
-	(no_connect
 		(at 93.98 143.51)
 		(uuid "d76d8e27-2b10-453c-8faa-df3b693a4973")
 	)
 	(no_connect
 		(at 93.98 144.78)
 		(uuid "e03c0b1a-4ecc-4a79-8b1b-78b4df71989a")
-	)
-	(no_connect
-		(at 166.37 102.87)
-		(uuid "e4e2f067-77fc-45ac-bfcf-d9a6182f7431")
-	)
-	(no_connect
-		(at 153.67 80.01)
-		(uuid "f7ff3ce7-67d6-4fca-962d-caed26224d30")
 	)
 	(wire
 		(pts
@@ -2309,23 +2340,13 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 48.26) (xy 166.37 48.26)
+			(xy 157.48 53.34) (xy 171.45 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0cda1503-da20-48a3-8236-61bda657b300")
-	)
-	(wire
-		(pts
-			(xy 86.36 55.88) (xy 101.6 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0eefdb61-3dbc-4840-87b4-f13a1ca381e3")
 	)
 	(wire
 		(pts
@@ -2359,17 +2380,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 105.41) (xy 166.37 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18b47e30-f539-4e13-b3cf-5f77478f0d9d")
-	)
-	(wire
-		(pts
-			(xy 153.67 137.16) (xy 166.37 137.16)
+			(xy 158.75 134.62) (xy 171.45 134.62)
 		)
 		(stroke
 			(width 0)
@@ -2389,7 +2400,17 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 82.55) (xy 166.37 82.55)
+			(xy 93.98 120.65) (xy 99.06 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34a560f5-bb23-4130-a445-a7a8bb0edd6d")
+	)
+	(wire
+		(pts
+			(xy 158.75 81.28) (xy 171.45 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2399,7 +2420,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 50.8) (xy 166.37 50.8)
+			(xy 157.48 55.88) (xy 171.45 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2409,17 +2430,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 80.01) (xy 166.37 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ee130ac-f4ce-476a-95a7-e32c7a1ce146")
-	)
-	(wire
-		(pts
-			(xy 153.67 110.49) (xy 166.37 110.49)
+			(xy 158.75 107.95) (xy 171.45 107.95)
 		)
 		(stroke
 			(width 0)
@@ -2439,7 +2450,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 124.46) (xy 166.37 124.46)
+			(xy 162.56 127) (xy 171.45 127)
 		)
 		(stroke
 			(width 0)
@@ -2449,17 +2460,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 55.88) (xy 166.37 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64260135-5bd3-48c5-bddf-7041a31bfc6f")
-	)
-	(wire
-		(pts
-			(xy 99.06 115.57) (xy 99.06 116.84)
+			(xy 113.03 115.57) (xy 113.03 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2469,7 +2470,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 85.09) (xy 166.37 85.09)
+			(xy 158.75 83.82) (xy 171.45 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2509,7 +2510,17 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 72.39) (xy 166.37 72.39)
+			(xy 63.5 45.72) (xy 57.15 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "781b8c27-338b-4304-a499-5f45691a1639")
+	)
+	(wire
+		(pts
+			(xy 168.91 76.2) (xy 171.45 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2519,7 +2530,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 60.96) (xy 166.37 60.96)
+			(xy 158.75 60.96) (xy 171.45 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2536,6 +2547,16 @@
 			(type default)
 		)
 		(uuid "7e391c9f-2e66-4b18-b415-e95ba703ed48")
+	)
+	(wire
+		(pts
+			(xy 158.75 129.54) (xy 171.45 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ed9c0be-0e86-464c-ac54-6f8970428752")
 	)
 	(wire
 		(pts
@@ -2559,7 +2580,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 74.93) (xy 166.37 74.93)
+			(xy 158.75 78.74) (xy 171.45 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2589,17 +2610,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 127) (xy 166.37 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f97595a-fac6-4cd4-ae2c-0d4e2fb8a0a4")
-	)
-	(wire
-		(pts
-			(xy 161.29 100.33) (xy 166.37 100.33)
+			(xy 158.75 102.87) (xy 171.45 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2629,7 +2640,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 115.57) (xy 99.06 115.57)
+			(xy 93.98 115.57) (xy 113.03 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2639,7 +2650,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 97.79) (xy 166.37 97.79)
+			(xy 161.29 100.33) (xy 171.45 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2749,17 +2760,17 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 45.72) (xy 63.5 45.72)
+			(xy 57.15 45.72) (xy 57.15 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c59e9f09-9c1b-4a0c-a373-24cc7c45fde1")
+		(uuid "cbb44d42-5529-4058-b955-50c2c585604e")
 	)
 	(wire
 		(pts
-			(xy 153.67 134.62) (xy 166.37 134.62)
+			(xy 158.75 132.08) (xy 171.45 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2809,16 +2820,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 132.08) (xy 166.37 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db06d374-0bcc-409b-afc0-cdb493ad8c64")
-	)
-	(wire
-		(pts
 			(xy 93.98 140.97) (xy 114.3 140.97)
 		)
 		(stroke
@@ -2859,7 +2860,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 107.95) (xy 166.37 107.95)
+			(xy 158.75 105.41) (xy 171.45 105.41)
 		)
 		(stroke
 			(width 0)
@@ -2889,17 +2890,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 43.18) (xy 57.15 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0cd8c82-cd40-497b-8f04-afaa14ce3bed")
-	)
-	(wire
-		(pts
-			(xy 153.67 58.42) (xy 166.37 58.42)
+			(xy 158.75 58.42) (xy 171.45 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2928,7 +2919,7 @@
 		(uuid "08a28ce8-0eb5-48b5-b6fc-b493ead68aa3")
 	)
 	(label "TxD_A-"
-		(at 154.94 60.96 0)
+		(at 160.02 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2968,7 +2959,7 @@
 		(uuid "42a1b1eb-cc8d-4540-952b-1a3bdba73529")
 	)
 	(label "TxD_A-"
-		(at 154.94 137.16 0)
+		(at 160.02 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2988,7 +2979,7 @@
 		(uuid "4b835e6e-01c4-4d47-8534-46f0f27f3532")
 	)
 	(label "RxD_B+"
-		(at 154.94 134.62 0)
+		(at 160.02 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2998,7 +2989,7 @@
 		(uuid "4cae0e4a-af47-4ba9-9a61-c8aea105fad5")
 	)
 	(label "RxD_B+"
-		(at 154.94 58.42 0)
+		(at 160.02 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3018,7 +3009,7 @@
 		(uuid "6d9d69d9-a3bd-4081-8ba4-96f115d901cd")
 	)
 	(label "TxD_A-"
-		(at 154.94 110.49 0)
+		(at 160.02 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3048,7 +3039,7 @@
 		(uuid "adac046c-8ca5-40ed-b49d-ddf3f21c2dad")
 	)
 	(label "RxD_B+"
-		(at 154.94 107.95 0)
+		(at 160.02 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3058,7 +3049,7 @@
 		(uuid "b711d6a0-d077-4d98-b57d-4ceff28a02c8")
 	)
 	(label "TxD_A-"
-		(at 154.94 85.09 0)
+		(at 160.02 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3088,7 +3079,7 @@
 		(uuid "c6e81a18-7e43-4bf0-940c-9fbae031930a")
 	)
 	(label "RxD_B+"
-		(at 154.94 82.55 0)
+		(at 160.02 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3177,7 +3168,7 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 163.83 124.46 90)
+		(at 162.56 127 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3188,7 +3179,7 @@
 		(fields_autoplaced yes)
 		(uuid "0f784b7c-1c2c-4ee7-9d1c-f070c9ac8543")
 		(property "Reference" "#PWR010"
-			(at 167.64 124.46 0)
+			(at 166.37 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3199,7 +3190,7 @@
 			)
 		)
 		(property "Value" "+24V"
-			(at 160.02 124.4599 90)
+			(at 158.75 126.9999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3210,7 +3201,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 124.46 0)
+			(at 162.56 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3221,7 +3212,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 124.46 0)
+			(at 162.56 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3232,7 +3223,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 163.83 124.46 0)
+			(at 162.56 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3411,124 +3402,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Deepsea_light_lib:2604-1106")
-		(at 170.18 54.61 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "20837866-2653-46fb-9b38-1c1e36c4b88e")
-		(property "Reference" "U2"
-			(at 175.26 53.3399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2604-1106"
-			(at 175.26 55.8799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Deepsea_light_lib:CONN-TH_2604-1106"
-			(at 170.18 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240408/20B39D55263B4F2D0D812E06044A9CB1.pdf"
-			(at 167.894 54.483 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" ""
-			(at 170.18 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C3818565"
-			(at 170.18 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Callout" "Light 1 Connector"
-			(at 170.18 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "a7f87550-7f07-461a-a059-6a5ac60a5cc5")
-		)
-		(pin "3"
-			(uuid "c2bde1ac-d3f6-455d-aad8-06c7b33cc01b")
-		)
-		(pin "5"
-			(uuid "ae3d88c4-4790-4940-8092-11df20b30ff5")
-		)
-		(pin "6"
-			(uuid "8324e18b-71ef-4611-9466-02add2940943")
-		)
-		(pin "2"
-			(uuid "17d02404-2118-47a9-b3f0-f9985bb81abe")
-		)
-		(pin "1"
-			(uuid "0c2bde08-2e37-4043-8fb5-c10625211814")
-		)
-		(instances
-			(project "deepsea-light-pcb"
-				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 39.37 156.21 0)
 		(unit 1)
@@ -3607,8 +3480,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Deepsea_light_lib:2604-1104")
+		(at 176.53 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e706028-4ecc-4370-aa9b-2e88c0952233")
+		(property "Reference" "U4"
+			(at 180.34 102.8699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2604-1104"
+			(at 180.34 105.4099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Deepsea_light_lib:CONN-TH_2604-1104"
+			(at 176.53 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240403/5F4C121C25BCB0080802869D2966FD73.pdf"
+			(at 174.244 104.013 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 176.53 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3309598"
+			(at 176.53 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "d642a7c9-4f96-4442-a70d-0a8af6709f86")
+		)
+		(pin "4"
+			(uuid "026dfff3-6ea1-4538-9aa1-e3273b2db853")
+		)
+		(pin "2"
+			(uuid "d957fed0-f25b-43a2-857a-298f7ca065b5")
+		)
+		(pin "1"
+			(uuid "64e3b083-c4bd-4312-8dad-0759d17521a6")
+		)
+		(instances
+			(project "deepsea-light-pcb"
+				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 99.06 116.84 0)
+		(at 113.03 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3619,7 +3593,7 @@
 		(fields_autoplaced yes)
 		(uuid "407c250a-f18f-46fe-a2e3-deee4463d319")
 		(property "Reference" "#PWR019"
-			(at 99.06 123.19 0)
+			(at 113.03 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3630,7 +3604,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 99.06 121.92 0)
+			(at 113.03 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3640,7 +3614,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 116.84 0)
+			(at 113.03 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3651,7 +3625,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 116.84 0)
+			(at 113.03 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3662,7 +3636,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 99.06 116.84 0)
+			(at 113.03 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3679,124 +3653,6 @@
 			(project "deepsea-light-pcb"
 				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Deepsea_light_lib:2604-1106")
-		(at 170.18 130.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4a67dc4d-d131-4196-b6c5-f240ba7acd0d")
-		(property "Reference" "U5"
-			(at 175.26 129.5399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2604-1106"
-			(at 175.26 132.0799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Deepsea_light_lib:CONN-TH_2604-1106"
-			(at 170.18 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240408/20B39D55263B4F2D0D812E06044A9CB1.pdf"
-			(at 167.894 130.683 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" ""
-			(at 170.18 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C3818565"
-			(at 170.18 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Callout" "Light 4 Connector"
-			(at 170.18 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "2132181e-03a9-45df-a81e-ad1eee322ea9")
-		)
-		(pin "3"
-			(uuid "c17d123d-fb11-4f3c-ac22-4a7532218444")
-		)
-		(pin "5"
-			(uuid "c32ab09c-6a19-4658-83df-a204f14a73b2")
-		)
-		(pin "6"
-			(uuid "14c7504b-e313-4cb4-b9b2-ce2938267e76")
-		)
-		(pin "2"
-			(uuid "541ee019-6f50-4ac0-8ce0-d48a4ba962a4")
-		)
-		(pin "1"
-			(uuid "65940100-9048-4c20-a650-3abd93eb3973")
-		)
-		(instances
-			(project "deepsea-light-pcb"
-				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
-					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -3882,7 +3738,7 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 163.83 72.39 90)
+		(at 168.91 76.2 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3893,7 +3749,7 @@
 		(fields_autoplaced yes)
 		(uuid "4df2cdc6-a9b1-4aad-b191-42ed44582b1c")
 		(property "Reference" "#PWR06"
-			(at 167.64 72.39 0)
+			(at 172.72 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3904,7 +3760,7 @@
 			)
 		)
 		(property "Value" "+24V"
-			(at 160.02 72.3899 90)
+			(at 165.1 76.1999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3915,7 +3771,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 72.39 0)
+			(at 168.91 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3926,7 +3782,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 72.39 0)
+			(at 168.91 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3937,7 +3793,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 163.83 72.39 0)
+			(at 168.91 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4037,126 +3893,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Deepsea_light_lib:2604-1106")
-		(at 170.18 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5a48c0c1-f78a-42fb-8ee9-ff32348832cf")
-		(property "Reference" "U3"
-			(at 175.26 77.4699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2604-1106"
-			(at 175.26 80.0099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Deepsea_light_lib:CONN-TH_2604-1106"
-			(at 170.18 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240408/20B39D55263B4F2D0D812E06044A9CB1.pdf"
-			(at 167.894 78.613 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" ""
-			(at 170.18 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C3818565"
-			(at 170.18 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Callout" "Light 2 Connector"
-			(at 170.18 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "4b7e7253-0d0a-43d7-9fbd-e6961bc18209")
-		)
-		(pin "3"
-			(uuid "59a50cb8-6f33-427a-be9b-ff6330d3ae75")
-		)
-		(pin "5"
-			(uuid "1cef886b-76f9-4ec2-9707-e072c7955b47")
-		)
-		(pin "6"
-			(uuid "607e1d25-a6c7-495f-9427-e771de7cd07e")
-		)
-		(pin "2"
-			(uuid "942db9ce-eef9-4c9b-98bb-a87883ffb931")
-		)
-		(pin "1"
-			(uuid "d1f7bddf-aff2-46b4-8132-889111cd8fdc")
-		)
-		(instances
-			(project "deepsea-light-pcb"
-				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 160.02 127 270)
+		(at 158.75 129.54 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4166,7 +3904,7 @@
 		(dnp no)
 		(uuid "5e7fb5a7-9d31-4ea5-8699-8202ea1e3b75")
 		(property "Reference" "#PWR026"
-			(at 153.67 127 0)
+			(at 152.4 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4177,7 +3915,7 @@
 			)
 		)
 		(property "Value" "LIGHT_GND"
-			(at 152.146 127.254 90)
+			(at 150.876 129.794 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4187,7 +3925,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 127 0)
+			(at 158.75 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4198,7 +3936,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 127 0)
+			(at 158.75 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4209,7 +3947,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 127 0)
+			(at 158.75 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4226,6 +3964,186 @@
 			(project "deepsea-light-pcb"
 				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
 					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Deepsea_light_lib:2604-1104")
+		(at 176.53 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72c880b2-8b16-4de2-8369-551c0ade466a")
+		(property "Reference" "U2"
+			(at 180.34 55.8799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2604-1104"
+			(at 180.34 58.4199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Deepsea_light_lib:CONN-TH_2604-1104"
+			(at 176.53 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240403/5F4C121C25BCB0080802869D2966FD73.pdf"
+			(at 174.244 57.023 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 176.53 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3309598"
+			(at 176.53 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "9f645eae-c9c6-4c9e-9019-377e44d82921")
+		)
+		(pin "4"
+			(uuid "3e7e5db3-6967-477d-a9f6-e83534a08677")
+		)
+		(pin "2"
+			(uuid "f4df05b0-7215-4b19-80de-6e41bc01fd92")
+		)
+		(pin "1"
+			(uuid "612914aa-3bbb-439f-b4eb-88e1174ce8f1")
+		)
+		(instances
+			(project "deepsea-light-pcb"
+				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 99.06 120.65 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74daeee1-ca57-431d-bd7e-68384aeee230")
+		(property "Reference" "#PWR016"
+			(at 95.25 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 102.87 120.6499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 99.06 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3d84f661-0bff-474c-9456-9e612ec98a49")
+		)
+		(instances
+			(project "deepsea-light-pcb"
+				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -4495,6 +4413,107 @@
 			(project "deepsea-light-pcb"
 				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Deepsea_light_lib:2604-1104")
+		(at 176.53 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4e1dd75-7b14-4d83-862b-83bac00e4bf8")
+		(property "Reference" "U3"
+			(at 180.34 78.7399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2604-1104"
+			(at 180.34 81.2799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Deepsea_light_lib:CONN-TH_2604-1104"
+			(at 176.53 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240403/5F4C121C25BCB0080802869D2966FD73.pdf"
+			(at 174.244 79.883 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 176.53 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3309598"
+			(at 176.53 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "c0cd9591-b2c3-4e48-8aa9-d5b77edb4f07")
+		)
+		(pin "4"
+			(uuid "c8fde184-2536-4545-a88f-c14873f9ac3a")
+		)
+		(pin "2"
+			(uuid "b035d3a9-0e62-45d4-8669-6bdcab9c049a")
+		)
+		(pin "1"
+			(uuid "973909c3-3f0d-4d41-abbc-65815afdcce3")
+		)
+		(instances
+			(project "deepsea-light-pcb"
+				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -4846,6 +4865,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Deepsea_light_lib:2604-1104")
+		(at 176.53 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b8815db2-74e0-4dce-b387-abc612b44214")
+		(property "Reference" "U5"
+			(at 180.34 129.5399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2604-1104"
+			(at 180.34 132.0799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Deepsea_light_lib:CONN-TH_2604-1104"
+			(at 176.53 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240403/5F4C121C25BCB0080802869D2966FD73.pdf"
+			(at 174.244 130.683 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 176.53 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3309598"
+			(at 176.53 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "a4d50699-0f98-4051-9267-5668fe8f0d90")
+		)
+		(pin "4"
+			(uuid "17bc4590-8c0c-4448-84ba-8a215bae6d02")
+		)
+		(pin "2"
+			(uuid "11259d17-1d8b-4bc4-bbe8-89955019a861")
+		)
+		(pin "1"
+			(uuid "ef33a059-7c4f-4606-9f7b-98c937dc4765")
+		)
+		(instances
+			(project "deepsea-light-pcb"
+				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MCU_RaspberryPi_and_Boards:Pico")
 		(at 76.2 134.62 0)
 		(unit 1)
@@ -5061,7 +5181,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 161.29 100.33 270)
+		(at 158.75 102.87 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5071,7 +5191,7 @@
 		(dnp no)
 		(uuid "c759bbcd-be5a-49a0-9ea6-44dbb833637f")
 		(property "Reference" "#PWR025"
-			(at 154.94 100.33 0)
+			(at 152.4 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5082,7 +5202,7 @@
 			)
 		)
 		(property "Value" "LIGHT_GND"
-			(at 153.416 100.584 90)
+			(at 150.876 103.124 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5092,7 +5212,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.29 100.33 0)
+			(at 158.75 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5103,7 +5223,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 100.33 0)
+			(at 158.75 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5114,7 +5234,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 161.29 100.33 0)
+			(at 158.75 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5247,7 +5367,7 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 163.83 97.79 90)
+		(at 161.29 100.33 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5258,7 +5378,7 @@
 		(fields_autoplaced yes)
 		(uuid "d34f208e-1a8b-4443-9dfb-d0faf56b8254")
 		(property "Reference" "#PWR08"
-			(at 167.64 97.79 0)
+			(at 165.1 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5269,7 +5389,7 @@
 			)
 		)
 		(property "Value" "+24V"
-			(at 160.02 97.7899 90)
+			(at 157.48 100.3299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5280,7 +5400,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 97.79 0)
+			(at 161.29 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5291,7 +5411,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 97.79 0)
+			(at 161.29 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5302,7 +5422,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 163.83 97.79 0)
+			(at 161.29 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5319,124 +5439,6 @@
 			(project "deepsea-light-pcb"
 				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Deepsea_light_lib:2604-1106")
-		(at 170.18 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d55a47ea-dd49-42e6-a022-23d7d5850d9b")
-		(property "Reference" "U4"
-			(at 175.26 102.8699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2604-1106"
-			(at 175.26 105.4099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Deepsea_light_lib:CONN-TH_2604-1106"
-			(at 170.18 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240408/20B39D55263B4F2D0D812E06044A9CB1.pdf"
-			(at 167.894 104.013 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" ""
-			(at 170.18 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C3818565"
-			(at 170.18 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Callout" "Light 3 Connector"
-			(at 170.18 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "1a2a7276-c66d-4a85-b057-a8df4c4ddf08")
-		)
-		(pin "3"
-			(uuid "5cefd6da-ace1-4d77-b7f4-708e7bf621a0")
-		)
-		(pin "5"
-			(uuid "b258a456-5f47-4807-ae5f-9c0ed8fcf2a4")
-		)
-		(pin "6"
-			(uuid "ea41f42e-4c1e-4135-981f-cdd734795235")
-		)
-		(pin "2"
-			(uuid "9933b316-cc9f-423a-980f-d84576f19636")
-		)
-		(pin "1"
-			(uuid "d498956a-04f6-47d4-a82b-07393e765b97")
-		)
-		(instances
-			(project "deepsea-light-pcb"
-				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
-					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -5522,7 +5524,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 160.02 74.93 270)
+		(at 158.75 78.74 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5532,7 +5534,7 @@
 		(dnp no)
 		(uuid "e1d9b8f5-c96a-4d63-a0a0-7050e06ae3f2")
 		(property "Reference" "#PWR024"
-			(at 153.67 74.93 0)
+			(at 152.4 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5543,7 +5545,7 @@
 			)
 		)
 		(property "Value" "LIGHT_GND"
-			(at 152.146 75.184 90)
+			(at 150.876 78.994 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5553,7 +5555,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 74.93 0)
+			(at 158.75 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5564,7 +5566,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 74.93 0)
+			(at 158.75 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5575,7 +5577,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 74.93 0)
+			(at 158.75 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5599,7 +5601,7 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 163.83 48.26 90)
+		(at 157.48 53.34 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5610,7 +5612,7 @@
 		(fields_autoplaced yes)
 		(uuid "e46ca18f-77b8-4433-8395-45383f5dfa1c")
 		(property "Reference" "#PWR04"
-			(at 167.64 48.26 0)
+			(at 161.29 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5621,7 +5623,7 @@
 			)
 		)
 		(property "Value" "+24V"
-			(at 160.02 48.2599 90)
+			(at 153.67 53.3399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5632,7 +5634,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 48.26 0)
+			(at 157.48 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5643,7 +5645,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 48.26 0)
+			(at 157.48 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5654,7 +5656,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 163.83 48.26 0)
+			(at 157.48 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5678,7 +5680,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 163.83 50.8 270)
+		(at 157.48 55.88 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5688,7 +5690,7 @@
 		(dnp no)
 		(uuid "ea6f0c06-c85f-4138-b421-f12da742389f")
 		(property "Reference" "#PWR05"
-			(at 157.48 50.8 0)
+			(at 151.13 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5699,7 +5701,7 @@
 			)
 		)
 		(property "Value" "LIGHT_GND"
-			(at 155.956 51.054 90)
+			(at 149.606 56.134 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5709,7 +5711,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 50.8 0)
+			(at 157.48 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5720,7 +5722,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 50.8 0)
+			(at 157.48 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5731,7 +5733,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 50.8 0)
+			(at 157.48 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5754,8 +5756,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 57.15 43.18 0)
+		(lib_id "power:+3V3")
+		(at 57.15 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5764,9 +5766,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "edf757fa-6710-4b97-b205-9075af2a2d97")
-		(property "Reference" "#PWR013"
-			(at 57.15 46.99 0)
+		(uuid "ecf30064-a5d8-4b3d-b324-f28278233002")
+		(property "Reference" "#PWR027"
+			(at 57.15 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5776,8 +5778,8 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 57.15 38.1 0)
+		(property "Value" "+3V3"
+			(at 57.15 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5787,7 +5789,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 43.18 0)
+			(at 57.15 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5798,7 +5800,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 43.18 0)
+			(at 57.15 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5808,8 +5810,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 57.15 43.18 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 57.15 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5820,12 +5822,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "8288d1b1-d814-413f-8e4d-cc2efeeba996")
+			(uuid "507a6dd2-c92f-42d4-a6f0-b860213ac4c7")
 		)
 		(instances
 			(project "deepsea-light-pcb"
 				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
-					(reference "#PWR013")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
