@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render 3D views of the board for the README.
+"""Render the board and schematic images for the README.
 
 Writes, under the output directory (``docs/`` by default):
 
@@ -7,13 +7,17 @@ Writes, under the output directory (``docs/`` by default):
     render-top.png        straight down
     render-bottom.png     straight up
     render-turntable.gif  one full turn of the board, one frame per 10 degrees
+    render-schematic.png  the schematic, trimmed to its content
 
 The stills and turntable frames come from kicad-cli's ray tracer (KiCad 9 or
 newer). The frames are stitched with ffmpeg, whose two-pass palette keeps the
 colours clean at a sensible file size; pass --no-gif to skip that step.
 
+The schematic is exported as SVG, rasterised with rsvg-convert, and cropped to
+its drawn extent (plus a margin) so the empty A4 page borders do not dominate.
+
 Usage:
-    scripts/render_3d.py [-o OUTPUT_DIR] [--frames N] [--no-gif]
+    scripts/render.py [-o OUTPUT_DIR] [--frames N] [--no-gif]
 """
 
 from __future__ import annotations
@@ -27,6 +31,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 BOARD = REPO / "deepsea-light-pcb.kicad_pcb"
+SCHEMATIC = REPO / "deepsea-light-pcb.kicad_sch"
 
 # Camera elevation for the angled views. -40 puts the camera above the board
 # looking down; the Z term is the turntable angle.
@@ -50,6 +55,12 @@ STILL_SIZE = ("1600", "1000")
 FRAME_SIZE = ("720", "540")
 FRAME_RATE = "12"
 
+# Schematic raster width before cropping, and the white margin kept around the
+# drawn content. Pixels lighter than WHITE_THRESHOLD count as background.
+SCHEMATIC_WIDTH = "2400"
+SCHEMATIC_MARGIN = 40
+WHITE_THRESHOLD = 250
+
 
 def find_kicad_cli() -> str:
     """Locate kicad-cli on PATH, falling back to the macOS application bundle."""
@@ -62,6 +73,20 @@ def find_kicad_cli() -> str:
     sys.exit("kicad-cli not found. Install KiCad 9 or newer, or put it on PATH.")
 
 
+def require(tool: str, hint: str) -> str:
+    found = shutil.which(tool)
+    if not found:
+        sys.exit(f"{tool} not found; {hint}.")
+    return found
+
+
+def run(cmd: list[str], what: str) -> subprocess.CompletedProcess:
+    result = subprocess.run(cmd, capture_output=True)
+    if result.returncode != 0:
+        sys.exit(f"{what} failed: {' '.join(cmd)}\n{result.stderr.decode(errors='replace')}")
+    return result
+
+
 def render(cli: str, out: Path, size: tuple[str, str], *args: str) -> None:
     cmd = [
         cli, "pcb", "render",
@@ -70,15 +95,11 @@ def render(cli: str, out: Path, size: tuple[str, str], *args: str) -> None:
         *args,
         "-o", str(out), str(BOARD),
     ]
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    if result.returncode != 0:
-        sys.exit(f"kicad-cli failed: {' '.join(cmd)}\n{result.stdout}{result.stderr}")
+    run(cmd, "kicad-cli")
 
 
 def make_gif(frames_dir: Path, out: Path) -> None:
-    ffmpeg = shutil.which("ffmpeg")
-    if not ffmpeg:
-        sys.exit("ffmpeg not found; install it or pass --no-gif.")
+    ffmpeg = require("ffmpeg", "install it or pass --no-gif")
     # One shared palette for the whole loop, then Bayer dithering, which
     # compresses far better than the default error diffusion on a slow pan.
     filters = (
@@ -91,9 +112,62 @@ def make_gif(frames_dir: Path, out: Path) -> None:
         "-framerate", FRAME_RATE, "-i", str(frames_dir / "frame_%03d.png"),
         "-vf", filters, "-loop", "0", str(out),
     ]
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    if result.returncode != 0:
-        sys.exit(f"ffmpeg failed: {' '.join(cmd)}\n{result.stderr}")
+    run(cmd, "ffmpeg")
+
+
+def content_box(png: Path) -> tuple[int, int, int, int]:
+    """Bounding box (x, y, w, h) of the non-white pixels in a PNG.
+
+    Reads the image back through ffmpeg as raw RGB so no imaging library is
+    needed; the per-row scan runs in C via bytes.strip, which is fast enough
+    for a few million pixels.
+    """
+    ffmpeg = require("ffmpeg", "install it")
+    ffprobe = require("ffprobe", "it ships with ffmpeg")
+    dims = run([ffprobe, "-v", "error", "-show_entries", "stream=width,height",
+                "-of", "csv=p=0", str(png)], "ffprobe").stdout.decode().strip()
+    width, height = (int(v) for v in dims.split(","))
+    raw = run([ffmpeg, "-loglevel", "error", "-i", str(png),
+               "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], "ffmpeg").stdout
+    # Snap near-white bytes to 0xff so anti-aliased fringes count as background.
+    near_white = bytes(0xFF if v >= WHITE_THRESHOLD else v for v in range(256))
+    stride = width * 3
+    left, right, top, bottom = width, 0, height, 0
+    for y in range(height):
+        row = raw[y * stride:(y + 1) * stride].translate(near_white)
+        stripped = row.lstrip(b"\xff")
+        if not stripped:
+            continue
+        x0 = (len(row) - len(stripped)) // 3
+        x1 = len(row.rstrip(b"\xff")) // 3 + 1
+        left, right = min(left, x0), max(right, x1)
+        top, bottom = min(top, y), max(bottom, y + 1)
+    if right <= left:
+        sys.exit(f"{png} is blank")
+    return left, top, right - left, bottom - top
+
+
+def render_schematic(cli: str, out: Path) -> None:
+    rsvg = require("rsvg-convert", "install librsvg")
+    ffmpeg = require("ffmpeg", "install it")
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_dir = Path(tmp)
+        # -e drops the drawing sheet (the title block is empty), -n leaves the
+        # background unset so rsvg-convert can paint it white.
+        run([cli, "sch", "export", "svg", "-e", "-n", "-o", str(tmp_dir), str(SCHEMATIC)],
+            "kicad-cli")
+        svgs = list(tmp_dir.glob("*.svg"))
+        if len(svgs) != 1:
+            sys.exit(f"expected one schematic sheet, got {len(svgs)}")
+        full = tmp_dir / "schematic.png"
+        run([rsvg, "-w", SCHEMATIC_WIDTH, "-b", "white", str(svgs[0]), "-o", str(full)],
+            "rsvg-convert")
+        x, y, w, h = content_box(full)
+        m = SCHEMATIC_MARGIN
+        # ffmpeg's crop filter clamps x/y so the box stays inside the image.
+        run([ffmpeg, "-y", "-loglevel", "error", "-i", str(full),
+             "-vf", f"crop=min(iw\\,{w + 2 * m}):min(ih\\,{h + 2 * m}):{x - m}:{y - m}",
+             str(out)], "ffmpeg")
 
 
 def main() -> None:
@@ -105,6 +179,9 @@ def main() -> None:
 
     cli = find_kicad_cli()
     args.output.mkdir(parents=True, exist_ok=True)
+
+    print("Rendering render-schematic.png")
+    render_schematic(cli, args.output / "render-schematic.png")
 
     for name, render_args in STILLS.items():
         print(f"Rendering {name}")

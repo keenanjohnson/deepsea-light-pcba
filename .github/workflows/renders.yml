@@ -1,5 +1,5 @@
 # Re-renders the images in docs/ whenever the board changes: the connector
-# overview from kicad-callouts and the 3D views from scripts/render_3d.py.
+# overview from kicad-callouts and the 3D views and schematic from scripts/render.py.
 # On main it commits the results so README.md stays current. On pull requests
 # it commits them to the PR branch and posts a sticky comment with a preview.
 name: Renders
@@ -9,16 +9,18 @@ on:
     branches: [main]
     paths:
       - deepsea-light-pcb.kicad_pcb
+      - deepsea-light-pcb.kicad_sch
       - Deepsea_light_lib/**
       - RP-Pico Libraries/**
-      - scripts/render_3d.py
+      - scripts/render.py
       - .github/workflows/renders.yml
   pull_request:
     paths:
       - deepsea-light-pcb.kicad_pcb
+      - deepsea-light-pcb.kicad_sch
       - Deepsea_light_lib/**
       - RP-Pico Libraries/**
-      - scripts/render_3d.py
+      - scripts/render.py
       - .github/workflows/renders.yml
   workflow_dispatch:
 
@@ -61,8 +63,8 @@ jobs:
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           kicad-callouts deepsea-light-pcb.kicad_pcb -o docs/connectors.png
 
-      - name: Render 3D views
-        run: python3 scripts/render_3d.py
+      - name: Render 3D views and schematic
+        run: python3 scripts/render.py
 
       - name: Commit if changed
         id: commit

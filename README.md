@@ -11,10 +11,16 @@ A PCB for controlling Deepsea Lights
 |-----|--------|
 | ![Top view](docs/render-top.png) | ![Bottom view](docs/render-bottom.png) |
 
-The 3D views come from `scripts/render_3d.py`, which drives KiCad's ray tracer
+The 3D views come from `scripts/render.py`, which drives KiCad's ray tracer
 (`kicad-cli pcb render`) and stitches the turntable frames with ffmpeg. The
+same script exports the schematic below. The
 [Renders workflow](.github/workflows/renders.yml) re-runs it, and the connector
-overview below, whenever the board changes and commits the results to `docs/`.
+overview, whenever the board or schematic changes and commits the results to
+`docs/`.
+
+## Schematic
+
+![Schematic](docs/render-schematic.png)
 
 ## Connectors
 
