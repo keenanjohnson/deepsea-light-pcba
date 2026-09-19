@@ -4216,6 +4216,17 @@
 				)
 			)
 		)
+		(property "Callout" "I2C Stemma / QWIIC"
+			(at 156.21 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c472853e-3b08-43ca-be31-2dfeb2211a16")
 		)
