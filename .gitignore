@@ -42,3 +42,6 @@ fp-info-cache
 
 # OSX Files
 .DS_Store
+
+# Generated fabrication output (scripts/generate_fab.py)
+fab/
