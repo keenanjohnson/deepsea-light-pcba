@@ -5692,6 +5692,19 @@
 				)
 			)
 		)
+		(property "Callout" "I2C Stemma / QWIIC"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "821447ca-bb3f-4bbc-9530-e1e589de1c60")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/29a0b6fc-2836-4848-a407-3822f2f20aba")
 		(sheetname "/")
 		(sheetfile "deepsea-light-pcb.kicad_sch")
