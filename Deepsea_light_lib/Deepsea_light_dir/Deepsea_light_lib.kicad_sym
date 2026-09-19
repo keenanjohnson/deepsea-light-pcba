@@ -779,6 +779,9 @@
     (property "LCSC" "C124410" (id 6) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "FT Rotation Offset" "90" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (symbol "PinSocket_1x20_P2.54mm_0_1"
       (rectangle (start -1.27 2.54) (end 1.27 -2.54)
         (stroke (width 0.254) (type default)) (fill (type background))
@@ -807,6 +810,9 @@
     (property "LCSC" "C124414" (id 6) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "FT Rotation Offset" "90" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (symbol "PinSocket_1x05_P2.54mm_0_1"
       (rectangle (start -1.27 2.54) (end 1.27 -2.54)
         (stroke (width 0.254) (type default)) (fill (type background))
@@ -833,6 +839,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "LCSC" "C146690" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "FT Rotation Offset" "90" (id 7) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (symbol "PinSocket_1x03_P2.54mm_0_1"

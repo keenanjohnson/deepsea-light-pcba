@@ -59,6 +59,17 @@
 			)
 		)
 	)
+	(property "FT Rotation Offset" "90"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
 	(fp_rect
 		(start -1.27 -6.35)
 		(end 1.27 6.35)

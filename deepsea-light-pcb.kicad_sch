@@ -420,6 +420,17 @@
 					)
 				)
 			)
+			(property "FT Rotation Offset" "90"
+				(at 0 0 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "socket female header 2.54mm 1x3"
 				(at 0 0 0)
 				(show_name no)
@@ -517,6 +528,17 @@
 					)
 				)
 			)
+			(property "FT Rotation Offset" "90"
+				(at 0 0 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "socket female header 2.54mm 1x5"
 				(at 0 0 0)
 				(show_name no)
@@ -608,6 +630,17 @@
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "FT Rotation Offset" "90"
+				(at 0 0 0)
+				(hide yes)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4205,6 +4238,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" "90"
+			(at 229.87 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "deepsea-light-pcb"
 				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
@@ -4360,6 +4404,17 @@
 			)
 		)
 		(property "LCSC" "C124410"
+			(at 229.87 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "90"
 			(at 229.87 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -4705,6 +4760,17 @@
 			)
 		)
 		(property "LCSC" "C146690"
+			(at 229.87 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "90"
 			(at 229.87 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -5163,6 +5229,17 @@
 			)
 		)
 		(property "LCSC" "C124414"
+			(at 229.87 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "90"
 			(at 229.87 140.97 0)
 			(hide yes)
 			(show_name no)
