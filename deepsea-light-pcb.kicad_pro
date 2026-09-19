@@ -96,18 +96,6 @@
         [
           "lib_footprint_mismatch|209049923|64674771|933977e3-79ca-462f-9c42-f372ccad73bf|00000000-0000-0000-0000-000000000000",
           ""
-        ],
-        [
-          "silk_edge_clearance|119984773|108600153|7eb1f5f5-e162-46c4-a07d-23a6b6c8d2c3|a51c8d6c-8354-4be8-bec6-2f9f18417549",
-          ""
-        ],
-        [
-          "silk_edge_clearance|120050000|108600153|7eb1f5f5-e162-46c4-a07d-23a6b6c8d2c3|1090d8ae-ee1c-4e31-b18d-1727c4e5bab6",
-          ""
-        ],
-        [
-          "silk_edge_clearance|120050000|93100178|7eb1f5f5-e162-46c4-a07d-23a6b6c8d2c3|c4200ab7-7d80-497b-9963-9f4d065a8952",
-          ""
         ]
       ],
       "meta": {
