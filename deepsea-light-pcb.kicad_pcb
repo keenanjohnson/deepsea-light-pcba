@@ -839,7 +839,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -10.5 -25.5)
@@ -3069,7 +3069,7 @@
 				(pins "1" "2" "3" "4" "5" "7" "8" "6")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -11.73 -14.27)
@@ -6280,6 +6280,338 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "Deepsea_light_lib:Socket_1x20_P2.54mm_NoPads"
+		(layer "F.Cu")
+		(uuid "71e3e9c0-6506-4d79-a1c2-7125ccff47f3")
+		(at 149.47 83.3)
+		(descr "Female header socket, 1x20, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module.")
+		(tags "socket female header 2.54mm 1x20 module")
+		(property "Reference" "J1"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "3280b735-b214-4a5b-a404-498f69fa2046")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "PinSocket_1x20_P2.54mm"
+			(at 0 26.40 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "10beb9ba-5022-4a42-b23b-be2108f5809f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "064fbb4f-3a80-46de-9925-def9bc8870d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Female header socket, 1x20, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module."
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b7d7c122-50ec-4359-b7f9-56fae79bcef9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C124410"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e09ffe33-646b-4bb4-be67-d205be5f41ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/5aced9de-4c42-435e-b9ef-1b8836010fe0")
+		(sheetname "/")
+		(sheetfile "deepsea-light-pcb.kicad_sch")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -1.27 -25.40)
+			(end 1.27 25.40)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "4fbb8d50-ddf4-4814-972d-40c1558bfbbc")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "Deepsea_light_lib:Socket_1x20_P2.54mm_NoPads"
+		(layer "F.Cu")
+		(uuid "8b8ffef6-7032-490e-a4f9-be3315244dc6")
+		(at 167.25 83.3)
+		(descr "Female header socket, 1x20, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module.")
+		(tags "socket female header 2.54mm 1x20 module")
+		(property "Reference" "J2"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "6d06a75b-3ab1-4e02-a4be-dff2d183beaa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "PinSocket_1x20_P2.54mm"
+			(at 0 26.40 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a58267d-5fbb-4fa6-acf4-f12b45adbf5d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa8ec85d-153f-4ae3-b7c9-e805d66854ce")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Female header socket, 1x20, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module."
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "47666e16-d3ab-40a9-b27d-a759e9ca9ed3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C124410"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1a54fb21-b8a9-4b9d-a175-ce84ab103e5c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/4f4c7e6a-4e33-4349-a81d-15f0eb3eda43")
+		(sheetname "/")
+		(sheetfile "deepsea-light-pcb.kicad_sch")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -1.27 -25.40)
+			(end 1.27 25.40)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "9316cdda-bbfa-46f0-b02c-e4057b50147c")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "Deepsea_light_lib:Socket_1x05_P2.54mm_NoPads"
+		(layer "F.Cu")
+		(uuid "49c12495-e889-4ca5-931e-7c445fffaaf2")
+		(at 195.44 92.3 180)
+		(descr "Female header socket, 1x5, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module.")
+		(tags "socket female header 2.54mm 1x5 module")
+		(property "Reference" "J3"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "3b0163c1-8fd6-4409-b355-db3581f35c71")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "PinSocket_1x05_P2.54mm"
+			(at 0 7.35 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d662c00d-3a9e-4f1c-9ff0-68d8e75afc2d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5def7ece-dd0f-4e45-8eea-c0a0d0d65cdc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Female header socket, 1x5, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module."
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c9d0417f-7e3b-4661-a165-26449e4a4231")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C124414"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "61373eff-2b49-43d7-99c6-c9cae9128cc5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/aa2e7367-554a-4d6d-928f-59ee060ad405")
+		(sheetname "/")
+		(sheetfile "deepsea-light-pcb.kicad_sch")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -1.27 -6.35)
+			(end 1.27 6.35)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "e9e6cabf-fd7e-445a-a76c-be22f22e2c2d")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "Deepsea_light_lib:Socket_1x03_P2.54mm_NoPads"
+		(layer "F.Cu")
+		(uuid "d7725586-8026-4606-8e10-ee8c2fdc9491")
+		(at 176.39 92.3 180)
+		(descr "Female header socket, 1x3, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module.")
+		(tags "socket female header 2.54mm 1x3 module")
+		(property "Reference" "J4"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "0ec7af20-d2b3-4942-bf2d-f646ecb915f3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "PinSocket_1x03_P2.54mm"
+			(at 0 4.81 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c2d47b2b-5ab8-4e75-a185-a793583292e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11e097a7-c214-4f2e-beb8-0156e53caf0c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Female header socket, 1x3, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module."
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "444cf0c6-30ac-4254-b085-569518a21154")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C146690"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0df651f-4f9a-4aa8-b31e-18f86d4aec1c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/8164e645-f347-4415-bc06-575da6a3edae")
+		(sheetname "/")
+		(sheetfile "deepsea-light-pcb.kicad_sch")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -1.27 -3.81)
+			(end 1.27 3.81)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "a500d8be-5059-45d1-a7b6-e3fd1cbedb95")
+		)
+		(embedded_fonts no)
 	)
 	(gr_line
 		(start 96.05 55.8)
