@@ -1,6 +1,6 @@
 # Builds the JLCPCB fabrication package and attaches it to the run as an artifact.
 #
-# Runs on demand, on every change to the board or schematic, and on release tags.
+# Runs on demand, on every push to main, on every pull request, and on release tags.
 # On a tag the gerbers are also attached to the GitHub release, so each ordered
 # revision has the exact files it was built from.
 name: Fab files
@@ -9,23 +9,7 @@ on:
   push:
     branches: [main]
     tags: ["v*"]
-    paths:
-      - deepsea-light-pcb.kicad_pcb
-      - deepsea-light-pcb.kicad_sch
-      - deepsea-light-pcb.kicad_pro
-      - Deepsea_light_lib/**
-      - RP-Pico Libraries/**
-      - scripts/generate_fab.py
-      - .github/workflows/fab.yml
   pull_request:
-    paths:
-      - deepsea-light-pcb.kicad_pcb
-      - deepsea-light-pcb.kicad_sch
-      - deepsea-light-pcb.kicad_pro
-      - Deepsea_light_lib/**
-      - RP-Pico Libraries/**
-      - scripts/generate_fab.py
-      - .github/workflows/fab.yml
   workflow_dispatch:
 
 permissions:
