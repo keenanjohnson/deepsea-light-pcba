@@ -35,6 +35,11 @@ position file. The headers themselves are J1–J4: pad-less footprints
 (`Socket_1x*_P2.54mm_NoPads`) placed over the module pin rows, carrying the
 LCSC numbers so JLCPCB solders the sockets and the modules are fitted by hand.
 
+J5 is a 4-pole 2.54 mm screw terminal on the right edge carrying I2C1 (GP14
+SDA, GP15 SCL) plus 3.3 V and ground, for an external INA238 power monitor
+module such as the Adafruit breakout. The firmware expects that sensor at
+address 0x40 and tolerates its absence.
+
 Design rule and unrouted-connection errors abort the export. ERC errors are
 reported but do not, since the remaining ones are annotation issues such as
 missing power flags; pass `--strict` to block on those too. Silkscreen warnings

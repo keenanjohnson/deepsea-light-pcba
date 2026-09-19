@@ -1551,6 +1551,7 @@
 		(size 1.7 1.7)
 		(drill 1.02)
 		(layers "*.Cu" "*.Mask")
+		(zone_connect 2)
 		(remove_unused_layers no)
 		(uuid "3993c707-5291-41b6-83c0-d1c09cb3833a")
 	)
