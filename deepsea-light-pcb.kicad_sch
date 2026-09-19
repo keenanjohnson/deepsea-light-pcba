@@ -349,6 +349,297 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Deepsea_light_lib:PinSocket_1x03_P2.54mm"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PinSocket_1x03_P2.54mm"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Deepsea_light_lib:Socket_1x03_P2.54mm_NoPads"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Female header socket, 1x3, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C146690"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "socket female header 2.54mm 1x3"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PinSocket_1x03_P2.54mm_0_1"
+				(rectangle
+					(start -1.27 2.54)
+					(end 1.27 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Deepsea_light_lib:PinSocket_1x05_P2.54mm"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PinSocket_1x05_P2.54mm"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Deepsea_light_lib:Socket_1x05_P2.54mm_NoPads"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Female header socket, 1x5, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C124414"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "socket female header 2.54mm 1x5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PinSocket_1x05_P2.54mm_0_1"
+				(rectangle
+					(start -1.27 2.54)
+					(end 1.27 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Deepsea_light_lib:PinSocket_1x20_P2.54mm"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PinSocket_1x20_P2.54mm"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Deepsea_light_lib:Socket_1x20_P2.54mm_NoPads"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Female header socket, 1x20, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C124410"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "socket female header 2.54mm 1x20"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PinSocket_1x20_P2.54mm_0_1"
+				(rectangle
+					(start -1.27 2.54)
+					(end 1.27 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Deepsea_light_lib:SparkFun_RS485_Breakout"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2182,6 +2473,26 @@
 		)
 		(uuid "1ca00c1a-caf0-4779-b07a-a1ce68f12576")
 	)
+	(text "Module sockets"
+		(exclude_from_sim no)
+		(at 229.87 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1f9054d3-6c59-4b94-94ef-b9d42f5b0d4a")
+	)
+	(text "Placed by JLCPCB. U1 plugs into J1+J2, U7 into J3+J4."
+		(exclude_from_sim no)
+		(at 229.87 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5a4426b8-ae16-449c-a852-3ad0e2cd94d8")
+	)
 	(text "Power is ~ 100 watts at 24 volts, so need to support just over 4 amps"
 		(exclude_from_sim no)
 		(at 169.418 41.656 0)
@@ -3816,6 +4127,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Deepsea_light_lib:PinSocket_1x20_P2.54mm")
+		(at 229.87 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f4c7e6a-4e33-4349-a81d-15f0eb3eda43")
+		(property "Reference" "J2"
+			(at 227.33 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PinSocket_1x20_P2.54mm"
+			(at 232.41 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Deepsea_light_lib:Socket_1x20_P2.54mm_NoPads"
+			(at 229.87 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Female header socket, 1x20, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module."
+			(at 229.87 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C124410"
+			(at 229.87 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "deepsea-light-pcb"
+				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 233.68 45.72 180)
 		(unit 1)
@@ -3887,6 +4286,94 @@
 			(project "deepsea-light-pcb"
 				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Deepsea_light_lib:PinSocket_1x20_P2.54mm")
+		(at 229.87 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5aced9de-4c42-435e-b9ef-1b8836010fe0")
+		(property "Reference" "J1"
+			(at 227.33 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PinSocket_1x20_P2.54mm"
+			(at 232.41 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Deepsea_light_lib:Socket_1x20_P2.54mm_NoPads"
+			(at 229.87 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Female header socket, 1x20, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module."
+			(at 229.87 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C124410"
+			(at 229.87 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "deepsea-light-pcb"
+				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -4144,6 +4631,94 @@
 			(project "deepsea-light-pcb"
 				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Deepsea_light_lib:PinSocket_1x03_P2.54mm")
+		(at 229.87 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8164e645-f347-4415-bc06-575da6a3edae")
+		(property "Reference" "J4"
+			(at 227.33 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PinSocket_1x03_P2.54mm"
+			(at 232.41 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Deepsea_light_lib:Socket_1x03_P2.54mm_NoPads"
+			(at 229.87 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Female header socket, 1x3, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module."
+			(at 229.87 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C146690"
+			(at 229.87 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "deepsea-light-pcb"
+				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -4520,6 +5095,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Deepsea_light_lib:PinSocket_1x05_P2.54mm")
+		(at 229.87 140.97 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa2e7367-554a-4d6d-928f-59ee060ad405")
+		(property "Reference" "J3"
+			(at 227.33 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PinSocket_1x05_P2.54mm"
+			(at 232.41 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Deepsea_light_lib:Socket_1x05_P2.54mm_NoPads"
+			(at 229.87 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Female header socket, 1x5, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module."
+			(at 229.87 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C124414"
+			(at 229.87 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "deepsea-light-pcb"
+				(path "/99abfaa1-ae0d-4c93-9def-8bea19834d01"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 52.07 128.27 0)
 		(unit 1)
@@ -4681,9 +5344,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b60dd616-d6af-46a8-8952-52b150ab060b")
@@ -4971,9 +5634,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c180cf1f-021a-48db-a448-68aae83180cb")

@@ -1,0 +1,74 @@
+(footprint "Socket_1x05_P2.54mm_NoPads"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Female header socket, 1x5, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module.")
+	(tags "socket female header 2.54mm 1x5 module")
+	(property "Reference" "REF**"
+		(at 0 0 90)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Socket_1x05_P2.54mm_NoPads"
+		(at 0 7.35 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Female header socket, 1x5, 2.54 mm pitch, vertical, through hole. No pads of its own: it is soldered into the pads of the module footprint it sits on, and exists so the socket appears in the JLCPCB BOM and placement files instead of the module."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_rect
+		(start -1.27 -6.35)
+		(end 1.27 6.35)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+	)
+	(attr through_hole)
+	(embedded_fonts no)
+)

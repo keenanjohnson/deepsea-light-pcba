@@ -29,6 +29,12 @@ Python that can import `pcbnew`; on macOS the script finds KiCad's bundled one.
 If a part still arrives rotated, add an `FT Rotation Offset` field (degrees,
 counter-clockwise) to that symbol and regenerate.
 
+The Pico (U1) and the SparkFun RS-485 breakout (U7) are off-the-shelf modules
+that plug into female 2.54 mm headers, so they are excluded from the BOM and
+position file. The headers themselves are J1–J4: pad-less footprints
+(`Socket_1x*_P2.54mm_NoPads`) placed over the module pin rows, carrying the
+LCSC numbers so JLCPCB solders the sockets and the modules are fitted by hand.
+
 Design rule and unrouted-connection errors abort the export. ERC errors are
 reported but do not, since the remaining ones are annotation issues such as
 missing power flags; pass `--strict` to block on those too. Silkscreen warnings
