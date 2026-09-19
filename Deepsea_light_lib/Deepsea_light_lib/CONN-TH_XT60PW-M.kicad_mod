@@ -2,6 +2,7 @@
   (descr "CONN-TH_XT60PW-M footprint")
   (tags "CONN-TH_XT60PW-M footprint C98732")
   (attr through_hole)
+  (zone_connect 2)
   (fp_text reference REF** (at -4.100292 -9.749886) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

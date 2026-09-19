@@ -1874,6 +1874,7 @@
 		(size 1.7 1.7)
 		(drill 1.02)
 		(layers "*.Cu" "*.Mask")
+		(zone_connect 2)
 		(remove_unused_layers no)
 		(uuid "4cfd9a02-97ef-4af4-a6b8-db9be1a8fda5")
 	)
@@ -1884,6 +1885,7 @@
 			(offset -0.9 0)
 		)
 		(layers "F.Cu" "F.Mask")
+		(zone_connect 2)
 		(uuid "751d823e-1d7b-4501-9658-d06d459b0e16")
 	)
 	(pad "43" thru_hole oval
