@@ -45,3 +45,7 @@ fp-info-cache
 
 # Generated fabrication output (scripts/generate_fab.py)
 fab/
+
+# Fabrication-Toolkit, fetched by scripts/generate_fab.py, and its scratch output
+.fabrication-toolkit/
+production/
