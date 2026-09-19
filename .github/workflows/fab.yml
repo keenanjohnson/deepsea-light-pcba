@@ -1,0 +1,78 @@
+# Builds the JLCPCB fabrication package and attaches it to the run as an artifact.
+#
+# Runs on demand, on every change to the board or schematic, and on release tags.
+# On a tag the gerbers are also attached to the GitHub release, so each ordered
+# revision has the exact files it was built from.
+name: Fab files
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+    paths:
+      - deepsea-light-pcb.kicad_pcb
+      - deepsea-light-pcb.kicad_sch
+      - deepsea-light-pcb.kicad_pro
+      - Deepsea_light_lib/**
+      - RP-Pico Libraries/**
+      - scripts/generate_fab.py
+      - .github/workflows/fab.yml
+  pull_request:
+    paths:
+      - deepsea-light-pcb.kicad_pcb
+      - deepsea-light-pcb.kicad_sch
+      - deepsea-light-pcb.kicad_pro
+      - Deepsea_light_lib/**
+      - RP-Pico Libraries/**
+      - scripts/generate_fab.py
+      - .github/workflows/fab.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fab-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  fab:
+    runs-on: ubuntu-latest
+    container:
+      # No 3D models needed here, so the smaller image is enough.
+      image: kicad/kicad:10.0
+      options: --user root
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate fabrication files
+        run: python3 scripts/generate_fab.py
+
+      - name: Upload fabrication package
+        uses: actions/upload-artifact@v4
+        with:
+          name: fab-${{ github.sha }}
+          path: |
+            fab/*.zip
+            fab/*.csv
+            fab/*.pdf
+          if-no-files-found: error
+
+      # The check reports are worth keeping separately: they are what the export
+      # was gated on, and they record the warnings that did not block it.
+      - name: Upload check reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: checks-${{ github.sha }}
+          path: fab/*.json
+          if-no-files-found: warn
+
+      - name: Attach to release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            fab/*.zip
+            fab/*.csv
+            fab/*.pdf
