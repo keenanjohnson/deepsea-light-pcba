@@ -62,6 +62,10 @@ The `Power` netclass gives `+24V` and `LIGHT_GND` a 0.5 mm clearance, wider than
 the 0.09 mm JLCPCB allows, because those nets land on hand-soldered terminal
 blocks where a bridge to the ground pour would put 24 V on the Pico.
 
+### Software Repo
+
+This board is designed to run micropython from this repo: https://github.com/Seattle-Aquarium/CCR_ROV_survey_methods/tree/main/lighting/code
+
 ## Random Notes
 
 I usually use this project to get parts / footprints:
