@@ -1,8 +1,8 @@
-# Re-renders docs/connectors.png with kicad-callouts whenever the board changes.
-# On main it commits the result so the image in README.md stays current.
-# On pull requests it commits the render to the PR branch and posts a sticky
-# comment with a preview.
-name: Connector render
+# Re-renders the images in docs/ whenever the board changes: the connector
+# overview from kicad-callouts and the 3D views from scripts/render_3d.py.
+# On main it commits the results so README.md stays current. On pull requests
+# it commits them to the PR branch and posts a sticky comment with a preview.
+name: Renders
 
 on:
   push:
@@ -11,13 +11,15 @@ on:
       - deepsea-light-pcb.kicad_pcb
       - Deepsea_light_lib/**
       - RP-Pico Libraries/**
-      - .github/workflows/connectors.yml
+      - scripts/render_3d.py
+      - .github/workflows/renders.yml
   pull_request:
     paths:
       - deepsea-light-pcb.kicad_pcb
       - Deepsea_light_lib/**
       - RP-Pico Libraries/**
-      - .github/workflows/connectors.yml
+      - scripts/render_3d.py
+      - .github/workflows/renders.yml
   workflow_dispatch:
 
 permissions:
@@ -25,7 +27,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: connector-render-${{ github.head_ref || github.ref }}
+  group: renders-${{ github.head_ref || github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -33,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     # Pushing back to a PR branch only works for branches in this repo, not forks.
     # Skip runs triggered by our own render commit, otherwise a PR re-renders forever
-    # (the git hash stamped into the image changes with every commit).
+    # (the git hash stamped into the connector image changes with every commit).
     if: >-
       github.actor != 'github-actions[bot]' &&
       (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
@@ -47,28 +49,31 @@ jobs:
           # On PRs check out the branch itself (not the detached merge commit) so we can push to it.
           ref: ${{ github.head_ref || github.ref }}
 
-      - name: Install kicad-callouts and rsvg-convert
+      - name: Install kicad-callouts, rsvg-convert and ffmpeg
         run: |
           apt-get update -qq
-          DEBIAN_FRONTEND=noninteractive apt-get install -y -qq librsvg2-bin pipx
+          DEBIAN_FRONTEND=noninteractive apt-get install -y -qq librsvg2-bin pipx ffmpeg
           pipx install kicad-callouts
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
-      - name: Render
+      - name: Render connector overview
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           kicad-callouts deepsea-light-pcb.kicad_pcb -o docs/connectors.png
 
+      - name: Render 3D views
+        run: python3 scripts/render_3d.py
+
       - name: Commit if changed
         id: commit
         run: |
-          git add docs/connectors.png
+          git add docs/connectors.png docs/render-*.png docs/render-*.gif
           if git diff --cached --quiet; then
-            echo "No change to docs/connectors.png"
+            echo "No change to docs/"
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "Update connector render [skip ci]"
+            git commit -m "Update renders [skip ci]"
             git push
           fi
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
@@ -81,8 +86,17 @@ jobs:
         with:
           script: |
             const marker = '<!-- connector-render -->';
-            const url = `https://raw.githubusercontent.com/${context.repo.owner}/${context.repo.repo}/${process.env.SHA}/docs/connectors.png`;
-            const body = `${marker}\n### Connector render\n\n![Connector overview](${url})\n\n_Rendered from ${process.env.SHA.slice(0, 7)}_`;
+            const raw = `https://raw.githubusercontent.com/${context.repo.owner}/${context.repo.repo}/${process.env.SHA}/docs`;
+            const body = [
+              marker,
+              '### Renders',
+              '',
+              `![3D view](${raw}/render-iso.png)`,
+              '',
+              `![Connector overview](${raw}/connectors.png)`,
+              '',
+              `_Rendered from ${process.env.SHA.slice(0, 7)}_`,
+            ].join('\n');
             const { data: comments } = await github.rest.issues.listComments({
               ...context.repo, issue_number: context.issue.number, per_page: 100,
             });

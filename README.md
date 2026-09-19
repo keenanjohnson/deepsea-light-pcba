@@ -1,6 +1,21 @@
 # deepsea-light-pcba
 A PCB for controlling Deepsea Lights
 
+![3D view of the board](docs/render-iso.png)
+
+<p align="center">
+  <img src="docs/render-turntable.gif" alt="Board turntable" width="720">
+</p>
+
+| Top | Bottom |
+|-----|--------|
+| ![Top view](docs/render-top.png) | ![Bottom view](docs/render-bottom.png) |
+
+The 3D views come from `scripts/render_3d.py`, which drives KiCad's ray tracer
+(`kicad-cli pcb render`) and stitches the turntable frames with ffmpeg. The
+[Renders workflow](.github/workflows/renders.yml) re-runs it, and the connector
+overview below, whenever the board changes and commits the results to `docs/`.
+
 ## Connectors
 
 ![Connector overview](docs/connectors.png)
