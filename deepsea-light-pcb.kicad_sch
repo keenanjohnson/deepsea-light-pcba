@@ -3586,7 +3586,7 @@
 		)
 		(uuid "9d57555a-1588-4d52-aada-12c75d4a07e8")
 	)
-	(label "LIGHTS_RX"
+	(label "LIGHTS_TX"
 		(at 52.07 50.8 0)
 		(effects
 			(font
@@ -3616,7 +3616,7 @@
 		)
 		(uuid "b8ff8e42-f4e5-4525-ac7c-7968ae4c436a")
 	)
-	(label "LIGHTS_TX"
+	(label "LIGHTS_RX"
 		(at 52.07 53.34 0)
 		(effects
 			(font
