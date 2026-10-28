@@ -4271,7 +4271,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2604-1104"
+		(property "Value" "HC-JXDZFH-5.0-4P"
 			(at 180.34 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4294,7 +4294,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240403/5F4C121C25BCB0080802869D2966FD73.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/HongCheng-HC_JXDZFH_5_04P/C53454557"
 			(at 174.244 104.013 0)
 			(hide yes)
 			(show_name no)
@@ -4317,7 +4317,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3309598"
+		(property "LCSC" "C53454557"
 			(at 176.53 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -4959,7 +4959,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2604-1104"
+		(property "Value" "HC-JXDZFH-5.0-4P"
 			(at 180.34 58.4199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4982,7 +4982,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240403/5F4C121C25BCB0080802869D2966FD73.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/HongCheng-HC_JXDZFH_5_04P/C53454557"
 			(at 174.244 57.023 0)
 			(hide yes)
 			(show_name no)
@@ -5005,7 +5005,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3309598"
+		(property "LCSC" "C53454557"
 			(at 176.53 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -5585,7 +5585,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2604-1104"
+		(property "Value" "HC-JXDZFH-5.0-4P"
 			(at 180.34 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5608,7 +5608,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240403/5F4C121C25BCB0080802869D2966FD73.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/HongCheng-HC_JXDZFH_5_04P/C53454557"
 			(at 174.244 79.883 0)
 			(hide yes)
 			(show_name no)
@@ -5631,7 +5631,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3309598"
+		(property "LCSC" "C53454557"
 			(at 176.53 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -6130,7 +6130,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2604-1104"
+		(property "Value" "HC-JXDZFH-5.0-4P"
 			(at 180.34 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6153,7 +6153,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240403/5F4C121C25BCB0080802869D2966FD73.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/HongCheng-HC_JXDZFH_5_04P/C53454557"
 			(at 174.244 130.683 0)
 			(hide yes)
 			(show_name no)
@@ -6176,7 +6176,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3309598"
+		(property "LCSC" "C53454557"
 			(at 176.53 130.81 0)
 			(hide yes)
 			(show_name no)
