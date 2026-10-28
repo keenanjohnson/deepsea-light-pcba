@@ -215,6 +215,19 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" "90"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4f260890-62f3-436d-a095-18f56eed711a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/72c880b2-8b16-4de2-8369-551c0ade466a")
 		(sheetname "/")
 		(sheetfile "deepsea-light-pcb.kicad_sch")
@@ -3918,6 +3931,19 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" "90"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "36692a5e-ae12-4b4d-8107-1dc09fb8a2c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/a4e1dd75-7b14-4d83-862b-83bac00e4bf8")
 		(sheetname "/")
 		(sheetfile "deepsea-light-pcb.kicad_sch")
@@ -4623,6 +4649,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fea76304-b8b0-4bc2-bc86-85889bc39eb5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "90"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "287ccbc1-8da2-4890-bf81-409d7a2df4ef")
 			(effects
 				(font
 					(size 1 1)
@@ -6077,6 +6116,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c1939029-1893-40b5-8408-4cda8388528d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "90"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2e4ff91-c6ff-473f-9da8-cfe4ec9aa079")
 			(effects
 				(font
 					(size 1 1)

@@ -4328,6 +4328,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" "90"
+			(at 176.53 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "d642a7c9-4f96-4442-a70d-0a8af6709f86")
 		)
@@ -5016,6 +5027,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" "90"
+			(at 176.53 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "9f645eae-c9c6-4c9e-9019-377e44d82921")
 		)
@@ -5642,6 +5664,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" "90"
+			(at 176.53 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "c0cd9591-b2c3-4e48-8aa9-d5b77edb4f07")
 		)
@@ -6177,6 +6210,17 @@
 			)
 		)
 		(property "LCSC" "C53454557"
+			(at 176.53 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "90"
 			(at 176.53 130.81 0)
 			(hide yes)
 			(show_name no)
