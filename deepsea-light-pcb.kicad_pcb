@@ -169,7 +169,7 @@
 				)
 			)
 		)
-		(property "Value" "2604-1104"
+		(property "Value" "HC-JXDZFH-5.0-4P"
 			(at 0.100077 -0.000051 180)
 			(layer "F.Fab")
 			(uuid "4d1e6111-58c0-4277-a012-6164a16897f9")
@@ -180,7 +180,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240403/5F4C121C25BCB0080802869D2966FD73.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/HongCheng-HC_JXDZFH_5_04P/C53454557"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -202,7 +202,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3309598"
+		(property "LCSC" "C53454557"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -750,15 +750,15 @@
 			(uuid "3203032f-d388-476f-998c-2cd1e1d2d0aa")
 		)
 		(embedded_fonts no)
-		(model "Deepsea_light_dir/CONN-TH_2604-1104.step"
+		(model "${KIPRJMOD}/Deepsea_light_lib/Deepsea_light_lib/Deepsea_light_dir/HC-JXDZFH-5.0-4P.step"
 			(offset
-				(xyz 1.5 -9 -3)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -0)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -3872,7 +3872,7 @@
 				)
 			)
 		)
-		(property "Value" "2604-1104"
+		(property "Value" "HC-JXDZFH-5.0-4P"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(uuid "41093dca-bb5c-4f72-88bd-7b0cd5be769b")
@@ -3883,7 +3883,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240403/5F4C121C25BCB0080802869D2966FD73.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/HongCheng-HC_JXDZFH_5_04P/C53454557"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -3905,7 +3905,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3309598"
+		(property "LCSC" "C53454557"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4453,15 +4453,15 @@
 			(uuid "74ba6763-ab7d-4d3c-915b-0d629f712350")
 		)
 		(embedded_fonts no)
-		(model "Deepsea_light_dir/CONN-TH_2604-1104.step"
+		(model "${KIPRJMOD}/Deepsea_light_lib/Deepsea_light_lib/Deepsea_light_dir/HC-JXDZFH-5.0-4P.step"
 			(offset
-				(xyz 1.5 -9 -3)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -0)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -4584,7 +4584,7 @@
 				)
 			)
 		)
-		(property "Value" "2604-1104"
+		(property "Value" "HC-JXDZFH-5.0-4P"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(uuid "dc4a60da-046f-4c6e-8e32-3fc046531922")
@@ -4595,7 +4595,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240403/5F4C121C25BCB0080802869D2966FD73.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/HongCheng-HC_JXDZFH_5_04P/C53454557"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -4617,7 +4617,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3309598"
+		(property "LCSC" "C53454557"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5165,15 +5165,15 @@
 			(uuid "d2c5b3a9-6733-4c75-a353-cea3e816ed40")
 		)
 		(embedded_fonts no)
-		(model "Deepsea_light_dir/CONN-TH_2604-1104.step"
+		(model "${KIPRJMOD}/Deepsea_light_lib/Deepsea_light_lib/Deepsea_light_dir/HC-JXDZFH-5.0-4P.step"
 			(offset
-				(xyz 1.5 -9 -3)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -0)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -6038,7 +6038,7 @@
 				)
 			)
 		)
-		(property "Value" "2604-1104"
+		(property "Value" "HC-JXDZFH-5.0-4P"
 			(at -0.000013 0.099949 180)
 			(layer "F.Fab")
 			(uuid "ec749420-c441-4053-974a-3316d20fd9c6")
@@ -6049,7 +6049,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20240403/5F4C121C25BCB0080802869D2966FD73.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/HongCheng-HC_JXDZFH_5_04P/C53454557"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -6071,7 +6071,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3309598"
+		(property "LCSC" "C53454557"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6619,15 +6619,15 @@
 			(uuid "9da1a989-1f82-4b54-87a8-c4d286eee646")
 		)
 		(embedded_fonts no)
-		(model "Deepsea_light_dir/CONN-TH_2604-1104.step"
+		(model "${KIPRJMOD}/Deepsea_light_lib/Deepsea_light_lib/Deepsea_light_dir/HC-JXDZFH-5.0-4P.step"
 			(offset
-				(xyz 1.9 -9 -3)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -0)
+				(xyz 0 0 0)
 			)
 		)
 	)
